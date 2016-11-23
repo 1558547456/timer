@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width" initial-scale=1.0/>
+	<meta name="viewport" content>
+	<style>
+		
+		
+	/* 窗口宽度>960*/
+@media screen and (min-width:481px){
+	*{
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		#box{
+			width:100%;
+			margin:0 auto;
+			background-image: url(49.jpg);
+			overflow: hidden;
+		}
+		
+		#chusheng,#sj,#xz{
+			color:deeppink;
+			margin-left:310px;
+			display: block;
+			padding:5px 5px;
+			line-height: 70px;
+			font-family: "微软雅黑";
+			font-size: 22px;
+		}
+		
+		#xz{
+			margin-bottom: 84px;
+		}
+		.music-one {
+			border-radius: 50%;
+			width: 220px;
+			height: 220px;
+			background: url(06.jpg) 270px 247px;
+			display: inline-block;
+			margin: 90px 0 0 90px;
+			position: relative;
+			text-align: center;
+		}
+		
+		.music-one::before {
+			border-radius: 50%;
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			z-index: 10;
+			display: block;
+			width: 230px;
+			height: 230px;
+			box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+			content: "";
+		}
+		
+		.music-frame {
+			width: 220px;
+			height: 220px;
+			border-radius: 50%;
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.72);
+			transition: All 0.5s ease;
+			display: table;
+			opacity: 0;
+			transform: scale(0.8);
+			z-index: 9999;
+		}
+		
+		.music-one:hover .music-frame {
+			transform: scale(1);
+			text-align: center;
+			opacity: 1;
+		}
+		
+		.music-words {
+			display: table-cell;
+			vertical-align: middle;
+			transition: All 0.5s ease;
+		}
+		
+		.music-words>h3 {
+			padding-top: 2px;
+			padding-bottom: 2px;
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+			font-family: "微软雅黑";
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 2;
+			margin: 0;
+		}
+		
+		.music-words>h3>a {
+			color: white;
+		}
+	
+	
+}		
+	
+	/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:480px){
+	*{
+			margin:0;
+			padding:0;
+		}
+		#box{
+			width:470px;
+			margin:0 auto;
+			background-image: url(1.jpg);
+			overflow: hidden;
+		}
+		
+		#chusheng,#sj,#xz{
+			color:deeppink;
+			margin-left:25px;
+			display: block;
+			padding:5px 5px;
+			line-height: 70px;
+			font-family: "微软雅黑";
+			font-size: 18px;
+		}
+		
+		#xz{
+			margin-bottom: 384px;
+		}
+		.music-one {
+			border-radius: 50%;
+			width: 220px;
+			height: 220px;
+			background: url(06.jpg) 270px 247px;
+			display: inline-block;
+			margin: 90px 0 0 90px;
+			position: relative;
+			text-align: center;
+		}
+		
+		.music-one::before {
+			border-radius: 50%;
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			z-index: 10;
+			display: block;
+			width: 230px;
+			height: 230px;
+			box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+			content: "";
+		}
+		
+		.music-frame {
+			width: 220px;
+			height: 220px;
+			border-radius: 50%;
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.72);
+			transition: All 0.5s ease;
+			display: table;
+			opacity: 0;
+			transform: scale(0.8);
+			z-index: 9999;
+		}
+		
+		.music-one:hover .music-frame {
+			transform: scale(1);
+			text-align: center;
+			opacity: 1;
+		}
+		
+		.music-words {
+			display: table-cell;
+			vertical-align: middle;
+			transition: All 0.5s ease;
+		}
+		
+		.music-words>h3 {
+			padding-top: 2px;
+			padding-bottom: 2px;
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+			font-family: "微软雅黑";
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 2;
+			margin: 0;
+		}
+		
+		.music-words>h3>a {
+			color: white;
+		}
+	
+	
+	
+}
+	
+
+		
+		
+		
+	</style>
+</head>
+<body>
+	
+<div id="box">
+		<div class="music-one">
+		<div class="music-frame">
+			<div class="music-words">
+				<h3><a href="#">嘻 嘻 嘻 嘻 </a></h3>
+			</div>
+		</div>
+		</div>
+		<div id="chusheng">
+			出生日期:2016年07月16日11点16分&nbsp;&nbsp;星期六
+		</div>
+		<div id="sj">
+		</div>
+		<div id="xz">
+		</div>
+		
+	
+	
+	</div>
+	<script>
+		
+	
+			function shijian(){
+				var date1 = new Date('2016/07/16 11:16:10');
+				var date= new Date();
+				var box=document.getElementById('box');
+				var sj=document.getElementById('sj');
+				
+				var date= new Date();
+				//年
+				var y=date.getFullYear();
+				//月
+				var m=date.getMonth()+1;
+				//日
+				var d=date.getDate();
+				//时
+				var h=date.getHours();
+				//分
+				var min=date.getMinutes();
+				//秒
+				//星期
+				var day=date.getDay();
+				var s=date.getSeconds();
+				//判断是否小于10  小于10在前面加上0
+				var h =(h<10)?'0'+ h : h;
+				var min =(min<10)?'0'+ min : min;
+				var s =(s<10)?'0'+ s : s;
+			
+				switch (day) 
+					{
+						case 0:
+						day="星期日";
+						break;
+						case 1:
+						day="星期一";
+						break;
+						case 2:
+						day="星期二";
+						break;
+						case 3:
+						day="星期三";
+						break;
+						case 4:
+						day="星期四";
+						break;
+						case 5:
+						day="星期五";
+						break;
+						case 6:
+						day="星期六";
+						break;
+					}
+			
+					var sss ='当前时间:' +y +'年'+m+'月'+d+'日'+ h+'时'+ min+'分'+ s +'秒&nbsp;&nbsp;'+day;
+		
+					sj.innerHTML= sss;
+					
+			
+			 }
+			     shijian();
+				shijiancha ();
+				(setInterval(function(){
+					 shijian();
+					shijiancha();
+				},1000))
+						
+						
+			function shijiancha (){					
+				var date1 = new Date('2016/07/16 11:16:10');
+				var date= new Date();
+				var xz=document.getElementById('xz')
+				var s1 =date1.getTime()		//开始时间
+				var s2 =date.getTime()		//结束时间
+				var jieguo =s2-s1    //时间差的毫秒数
+				var s3=Math.floor(jieguo/(24*3600*1000)) //计算出相差天数
+			//计算相差小时数	
+				var s4=jieguo%(24*3600*1000); //计算天数后剩余的毫秒数
+				var s5=Math.floor(s4/(3600*1000)) //计算小时
+				
+			//计算相差分钟数
+				var s6=s4%(3600*1000); //计算小时后剩余的毫秒数
+				var s7=Math.floor(s6/(60*1000))
+			//计算相差秒数
+			
+				var s8 =s6%(60*1000);   //计算分钟数后剩余的毫秒数
+				
+				var s9 =Math.round(s8/1000)
+				
+				
+				var s5 =(s5<10)?'0'+ s5 : s5;
+				var s7 =(s7<10)?'0'+ s7 : s7;
+				var s9 =(s9<10)?'0'+ s9 : s9;
+			
+	
+				xz.innerHTML = '第'+s3+'天'+s5+'时'+s7+'分'+s9+'秒';
+			}
+		
+	
+	</script>
+		
+</body>
+</html>
